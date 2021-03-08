@@ -1,2 +1,2 @@
 #!/bin/bash
-docker stop --time=3600 sonarqube
+docker-compose -f "sonarqube\docker-compose.yml" down

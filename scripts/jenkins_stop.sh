@@ -1,2 +1,2 @@
 #!/bin/bash
-docker stop --time=120 jenkins-blueocean jenkins-docker
+docker-compose -f "jenkins\docker-compose.yml" down
