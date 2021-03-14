@@ -2,7 +2,7 @@ version: "2"
 
 services:
   sonarqube:
-    image: sonarqube:8.7.0-community
+    image: sonarqube:8.7.1-community
     container_name: sonarqube
     depends_on:
       - sonarpostgres
@@ -22,8 +22,6 @@ services:
   sonarpostgres:
     image: postgres:12.6
     container_name: sonarpostgres
-    ports:
-      - "9091:5432"
     networks:
       - sonarnet
     environment:
